@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="Schulup" />
+    <meta name="robots" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Schulup Student Portal"/>
+    <meta property="og:image" content="../social-image.png" />
+    <title>Schulup | Student Portal  </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon.png">
+    <link href="../public/vendor/summernote/summernote.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/vendor/fullcalendar/css/main.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../public/css/style.css" rel="stylesheet" type="text/css"/>
+     <style>
+        .content-body{
+            min-height: 0 !important;
+        }
+    </style>          
+    
+</head>
+
+<body>
+
+    <div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+
+    <div id="main-wrapper">
+
+        <!--*************  Nav header start *******************-->
+        <div class="nav-header">
+            <a href="#" class="brand-logo">
+                <img src="../public/images/logo.png" class="logo-abbr" alt=""> 
+                <h3 class="brand-title">Schulup</h3>
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+      
+
+<!--*************Header start *********************-->
+<div class="header">
+    <div class="header-content">
+        <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse justify-content-between">
+                <div class="header-left">
+                    <h4 class="school_name">Prime Brithish  Schools </h4>
+                    <h4 class="brand_name">SCHULUP </h4>
+                </div>
+                <ul class="navbar-nav header-right main-notification">
+				
+					<li class="nav-item dropdown notification_dropdown">
+                        <a class="nav-link bell dz-fullscreen" href="#">
+                            <svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
+                            <svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
+                        </a>
+					</li>
+					<li class="nav-item dropdown notification_dropdown">
+                        <a class="nav-link  ai-icon" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                           <svg class="bell-icon" width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.75 15.8385V13.0463C22.7471 10.8855 21.9385 8.80353 20.4821 7.20735C19.0258 5.61116 17.0264 4.61555 14.875 4.41516V2.625C14.875 2.39294 14.7828 2.17038 14.6187 2.00628C14.4546 1.84219 14.2321 1.75 14 1.75C13.7679 1.75 13.5454 1.84219 13.3813 2.00628C13.2172 2.17038 13.125 2.39294 13.125 2.625V4.41534C10.9736 4.61572 8.97429 5.61131 7.51794 7.20746C6.06159 8.80361 5.25291 10.8855 5.25 13.0463V15.8383C4.26257 16.0412 3.37529 16.5784 2.73774 17.3593C2.10019 18.1401 1.75134 19.1169 1.75 20.125C1.75076 20.821 2.02757 21.4882 2.51969 21.9803C3.01181 22.4724 3.67904 22.7492 4.375 22.75H9.71346C9.91521 23.738 10.452 24.6259 11.2331 25.2636C12.0142 25.9013 12.9916 26.2497 14 26.2497C15.0084 26.2497 15.9858 25.9013 16.7669 25.2636C17.548 24.6259 18.0848 23.738 18.2865 22.75H23.625C24.321 22.7492 24.9882 22.4724 25.4803 21.9803C25.9724 21.4882 26.2492 20.821 26.25 20.125C26.2486 19.117 25.8998 18.1402 25.2622 17.3594C24.6247 16.5786 23.7374 16.0414 22.75 15.8385ZM7 13.0463C7.00232 11.2113 7.73226 9.45223 9.02974 8.15474C10.3272 6.85726 12.0863 6.12732 13.9212 6.125H14.0788C15.9137 6.12732 17.6728 6.85726 18.9703 8.15474C20.2677 9.45223 20.9977 11.2113 21 13.0463V15.75H7V13.0463ZM14 24.5C13.4589 24.4983 12.9316 24.3292 12.4905 24.0159C12.0493 23.7026 11.716 23.2604 11.5363 22.75H16.4637C16.284 23.2604 15.9507 23.7026 15.5095 24.0159C15.0684 24.3292 14.5411 24.4983 14 24.5ZM23.625 21H4.375C4.14298 20.9999 3.9205 20.9076 3.75644 20.7436C3.59237 20.5795 3.50014 20.357 3.5 20.125C3.50076 19.429 3.77757 18.7618 4.26969 18.2697C4.76181 17.7776 5.42904 17.5008 6.125 17.5H21.875C22.571 17.5008 23.2382 17.7776 23.7303 18.2697C24.2224 18.7618 24.4992 19.429 24.5 20.125C24.4999 20.357 24.4076 20.5795 24.2436 20.7436C24.0795 20.9076 23.857 20.9999 23.625 21Z" fill="#EB8153"/>
+							</svg>
+							<div class="pulse-css"></div>
+                        </a>
+						<div class="dropdown-menu dropdown-menu-end">
+                            <div id="dlab_W_Notification1" class="widget-media dz-scroll p-3 height380">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-panel">
+											<div class="media me-2">
+												<img alt="image" width="50" src="../public/images/profile/port.jpg">
+											</div>
+											<div class="media-body">
+												<h6 class="mb-1">Sultads Send you a mssage</h6>
+												<small class="d-block">29 July 2023 - 02:26 PM</small>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+                            <a class="all-notification" href="javascript:void(0)">See all messages <i class="ti-arrow-right"></i></a>
+                        </div>
+					</li>
+				
+				
+                    <li class="nav-item dropdown header-profile">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <img src="../public/images/profile/pic1.jpg" width="20" alt=""/>
+							<div class="header-info">
+								<span>Sandra James</span>
+								<small>Primary One</small>
+							</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="Profile.html" class="dropdown-item ai-icon">
+                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span class="ms-2">Profile </span>
+                            </a>
+                            <a href="messenger.html" class="dropdown-item ai-icon">
+                                <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span class="ms-2">Inbox </span>
+                            </a>
+                            <a href="../login.html" class="dropdown-item ai-icon">
+                                <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                <span class="ms-2">Logout </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		<div class="sub-header">
+			<div class="d-flex align-items-center flex-wrap me-auto">
+				<h5 class="dashboard_bar">
+					 Hello Blessing !
+                </h5>
+			</div>
+		</div>
+	</div>
+</div>
+<!--******** Header end ti-comment-alt *********-->		
+	
+<!--********** Sidebar start *********************-->
+<div class="deznav">
+    <div class="deznav-scroll">
+		<div class="main-profile">
+			<div class="image-bx">
+				<img src="../public/images/profile/port.jpg" alt="">
+				<a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a>
+			</div>
+			<h5 class="name"><span class="font-w400">Hello,</span> Sandra</h5>
+			<p class="email">Primary One</p>
+		</div>
+		<ul class="metismenu" id="menu">
+			<li class="nav-label first">Main Menu</li>
+            <li>
+            	<a href="index.html" aria-expanded="false">
+					<i class="flaticon-144-layout"></i>
+					<span class="nav-text">Dashboard</span>
+				</a>
+            </li>
+            <li><a href="lessons.html" aria-expanded="false">
+				 <i class="flaticon-381-video-player-1"></i>
+					<span class="nav-text">Lessons</span>
+				</a>
+            </li>
+            <li><a href="assignments.html" aria-expanded="false">
+				 <i class="flaticon-381-book"></i>
+					<span class="nav-text">Assignments</span>
+				</a>
+            </li>
+            <li><a href="reportcard.html" aria-expanded="false">
+				 <i class="flaticon-381-newspaper"></i>
+					<span class="nav-text">Report Cards</span>
+				</a>
+            </li>
+            <li><a href="analytics.html" aria-expanded="false">
+				 <i class="flaticon-381-cloud-computing"></i>
+					<span class="nav-text">Analytics</span>
+				</a>
+            </li>
+            <li><a href="messenger.html" aria-expanded="false">
+				 <i class="flaticon-381-folder"></i>
+					<span class="nav-text">Messenger</span>
+				</a>
+            </li>
+            <li><a href="news-bulletin.html" aria-expanded="false">
+				 <i class="flaticon-381-news"></i>
+					<span class="nav-text">News/Bulletin</span>
+				</a>
+            </li>
+            <li><a href="Events-calendar.html" aria-expanded="false">
+				 <i class="flaticon-381-calendar"></i>
+					<span class="nav-text">Events/Calendar</span>
+				</a>
+            </li>
+            <li><a href="Profile.html" aria-expanded="false">
+				 <i class="flaticon-381-user"></i>
+					<span class="nav-text">My Profile</span>
+				</a>
+            </li>
+           
+           
+        </ul>
+	
+	</div>
+</div>
+
+
+		
+		
+<!--******* Content body start ***********************-->
+<div class="content-body">
+ <!-- row -->
+            
+<div class="container-fluid">
+	<div class="row">
+
+    	<div class="project-nav">
+			<div class="card-action card-tabs  me-auto">
+				<ul class="nav nav-tabs style-2">
+					<li class="nav-item">
+						<a href="#navpills-1" class="nav-link active" data-bs-toggle="tab" aria-expanded="false">All Assignments <span class="badge badge-pill shadow-primary badge-primary">154</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#navpills-2" class="nav-link" data-bs-toggle="tab" aria-expanded="false">Pending <span class="badge badge-pill badge-info shadow-info">2</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#navpills-3" class="nav-link" data-bs-toggle="tab" aria-expanded="true">Submitted <span class="badge badge-pill badge-warning shadow-warning">4</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab-content project-list-group" id="myTabContent">	
+			<div class="tab-pane fade active show" id="navpills-1">
+				<div class="col-12">
+                    <div class="card" style="background:transparent">
+                        <div class="card-header">
+                            <h4 class="card-title">All Assignments</h4>
+                        </div>
+                        <div class="card-body" style="background:transparent">
+                          <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                							<div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-success d-sm-inline-block d-none">Submitted</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                                            <div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                			<div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                						    <div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-primary d-sm-inline-block d-none">Pending</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                                            <div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                		  </div>    
+                        </div>
+                    </div>
+                 </div>
+			</div>
+			<div class="tab-pane fade" id="navpills-2">
+			<div class="col-12">
+                    <div class="card" style="background:transparent">
+                        <div class="card-header">
+                            <h4 class="card-title">Pending</h4>
+                        </div>
+                        <div class="card-body" style="background:transparent">
+                          <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                							<div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-primary d-sm-inline-block d-none">Pending</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                                            <div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+    
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                			<div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                						    <div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-primary d-sm-inline-block d-none">Pending</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                                            <div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+	
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                		  </div>    
+                        </div>
+                    </div>
+                 </div>
+			</div>
+			<div class="tab-pane fade" id="navpills-3">
+			  <div class="col-12">
+                    <div class="card" style="background:transparent">
+                        <div class="card-header">
+                            <h4 class="card-title">Submitted</h4>
+                        </div>
+                        <div class="card-body" style="background:transparent">
+                          <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                							<div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-success d-sm-inline-block d-none">Submitted</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                						    <div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+	
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                			<div class="col-xl-6 col-lg-12">
+                				<div class="card project-card">
+                					<div class="card-body">
+                						<div class="d-flex mb-4 align-items-start">
+                						    <div class="me-auto">
+                								<p class="text-primary mb-1">Grade 4 -2nd Term</p>
+                								<h5 class="title font-w600 mb-2"><a href="submit_assignment.html" class="text-black">English Langauage</a></h5>
+                								<span>2021/2022</span>
+                							</div>
+                							<span class="badge badge-success d-sm-inline-block d-none">Submitted</span>
+                						</div>
+                						<p class="mb-4">Sound the three Letter Words</p>
+                						<div class="row mb-4">
+                							<div class="col-sm-6 mb-sm-0 mb-3 d-flex">
+                								<div class="dt-icon bgl-info me-3">
+                									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M19 5H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.7348 2 16.4804 2.10536 16.2929 2.29289C16.1054 2.48043 16 2.73478 16 3V5H8V3C8 2.73478 7.89464 2.48043 7.70711 2.29289C7.51957 2.10536 7.26522 2 7 2C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V9H22V8C22 7.20435 21.6839 6.44129 21.1213 5.87868C20.5587 5.31607 19.7957 5 19 5Z" fill="#92caff"></path>
+                										<path d="M2 19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7957 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V11H2V19Z" fill="#51A6F5"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Start Date</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Aug 15th 2023</p>
+                								</div>
+                							</div>
+                							<div class="col-sm-6 d-flex">
+                								<div class="dt-icon me-3 bgl-danger">
+                									<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                										<path d="M18.6601 8.6858C18.5437 8.44064 18.2965 8.28427 18.025 8.28427H10.9728L15.2413 1.06083C15.3697 0.843469 15.3718 0.573844 15.2466 0.354609C15.1214 0.135375 14.8884 -9.37014e-05 14.6359 4.86277e-08L8.61084 0.000656299C8.3608 0.000750049 8.12957 0.1335 8.00362 0.349453L0.0958048 13.905C-0.0310859 14.1224 -0.0319764 14.3911 0.0934142 14.6094C0.218805 14.8277 0.451352 14.9624 0.703117 14.9624H7.71037L5.66943 23.1263C5.58955 23.4457 5.74213 23.7779 6.03651 23.9255C6.13691 23.9757 6.24459 24 6.35123 24C6.55729 24 6.75923 23.9094 6.89638 23.7413L18.5699 9.43186C18.7415 9.22148 18.7766 8.93105 18.6601 8.6858V8.6858Z" fill="#FF4C41"></path>
+                									</svg>
+                								</div>
+                								<div>
+                									<span>Deadline</span>
+                									<p class="mb-0 pt-1 font-w500 text-black">Tuesday,Sep 29th 2023</p>
+                								</div>
+                							</div>
+                							<div class="d-flex">
+                							    <a href="submit_assignment.html"><span class="badge badge-sm badge-danger mt-3 me-3">View Details</span></a>
+                							    <a href="feedback.html"><span class="badge badge-sm badge-info mt-3">Feedback</span></a>
+                                            </div>
+                						</div>
+                			
+                					
+                					</div>
+                				</div>
+                			</div>
+                		  </div>    
+                        </div>
+                    </div>
+                 </div>
+			</div>
+		
+		</div>
+	</div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer p-0">
+      <div class="copyright">
+          <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Schulup</a> 2023</p>
+      </div>
+  </div>
+
+</div>
+   
+    <!--**********************************
+        Scripts
+    ***********************************-->
+	<script src="../public/vendor/global/global.min.js" type="text/javascript"></script>
+	<script src="../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="../public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+
+	<script src="../public/js/plugins-init/chartjs-init.js" type="text/javascript"></script>
+
+    <script src="../public/vendor/datatables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="../public/js/plugins-init/datatables.init.js" type="text/javascript"></script>
+	<script src="../public/vendor/fullcalendar/js/main.min.js" type="text/javascript"></script>
+	<script src="../public/js/plugins-init/fullcalendar-init.js" type="text/javascript"></script>
+	<script src="../public/js/dashboard/chat.js" type="text/javascript"></script>
+	<script src="../public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
+	<script src="../public/js/custom.js" type="text/javascript"></script>
+	<script src="../public/js/deznav-init.js" type="text/javascript"></script>
+	
+	 <script src="https://cdn.ckeditor.com/4.18.0/full-all/ckeditor.js"></script>
+      <script>
+            CKEDITOR.replace( 'comment' );
+    </script>   
+	
+</body>
+
+</html>
